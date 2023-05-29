@@ -1,0 +1,25 @@
+@mixin flexbox ($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin list-reset {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+@mixin link ($color, $padding, $border, $b-radius) {
+  display: inline-block;
+  padding: $padding;
+  border: $border;
+  border-radius: $b-radius;
+  color: $color;
+  text-decoration-line: none; 
+}
+@mixin sticy-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-grow: 1;
+}

@@ -1,0 +1,12 @@
+@use "mixins";
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+body {
+  margin: 0;
+  @include mixins.sticy-footer;
+  
+}
